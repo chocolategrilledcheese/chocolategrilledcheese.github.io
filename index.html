@@ -1,0 +1,90 @@
+<!Doctype HTML>
+<html>
+<head>
+    <title>MC | Official Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" lang="en">
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Caveat|Courgette|Josefin+Sans|Ruda&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+    
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" data-scroll="music">Music</a></li>
+            <li><a href="#" data-scroll="shows">Shows</a></li>
+            <li><a href="#" data-scroll="about">About</a></li>
+            <li><a href="#" data-scroll="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+<div id="hero">
+    
+    
+    <div id="artistlogo">
+        <div id="layer-1" class="layers">
+        </div>
+        <div id="layer-2" class="layers">
+        </div>
+        <div id="layer-3" class="layers">
+        </div>
+        <div id="layer-4" class="layers">
+        </div>
+    </div>
+    
+    <div class="background">
+    
+    <svg>
+        <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+            <feTurbulence id="bg-filter" numOctaves="3" seed="2" baseFrequency=".02 .05"></feTurbulence>
+            <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+            <animate xlink:href="#bg-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate>
+        </filter>
+    </svg>
+    </div>
+    
+</div>
+    
+<section id="music" data-anchor="music">
+    <h2>Music</h2>
+</section>
+    
+<section id="shows" data-anchor="shows">
+    <h2>Shows</h2>
+    <div id="bandsintown" class="container">
+    <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="MC & The Manics" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="true" data-text-color="#000000" data-link-color="#00b4b3" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="false" data-link-text-color="#FFFFFF" data-display-lineup="true" data-display-play-my-city="false" data-separator-color="rgba(255, 255, 255, 0.5)" data-font="Sans Serif"></a>
+    </div>
+</section>
+    
+<!--
+<section id="videos"> 
+</section>
+-->
+    
+<section id="about" data-anchor="about">
+    <div id="bio" class="container">
+        <h2>About</h2>
+    <p>MC&#39;s emergence into a solo artist is as daring as it is spontaneous. It’s the project of a
+22-year-old singer, songwriter, multi-instrumentalist, and producer. She blends genres like
+alternative rock and pop, with lyrics that contain blunt honesty and dark humor. She spent years
+as a band member in the rock band Chopped Up Tulips, among other bands, before deciding it
+was time do start her own project. MC’s records take the modern elements of pop songwriting
+and recording, and mixes them with her rock influences to create a guitar-heavy catchy modern
+pop sound.
+Within weeks of the start of this project, her raw talent and uniquely catchy songs landed
+her a spot as the opening act for Drake Bell on his New Orleans tour stop. Since then, the fire
+has not stopped burning beneath her as she works every day to speak to the world through her
+music, with her live band, MC &amp; The Manics.</p>
+    </div>
+</section>
+
+<section id="contact" data-anchor="contact">
+    <h2>Contact</h2>
+</section>
+    
+</body>
+    <script src="smoothscroll.js"></script>
+</html>

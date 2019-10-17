@@ -1,0 +1,286 @@
+:root {
+    --color1: #FF970D;
+    --color2: #E8560C;
+    --color3: #FF1900;
+    --color4: #A600B2;
+    --color5: #9600FF;
+    --logo-red: #F21D2F;
+    --logo-red2:#F55F61;
+    --logo-orange1: #F28322;
+    --logo-orange1-bright: #F5AA70;
+    --logo-orange2: #F2522E;
+    --logo-orange2-bright: #FF8062;
+    --color6: #2B0028;
+    --color7: #4D0047;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Caveat|Courgette|Josefin+Sans|Ruda&display=swap');
+
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Amaranth', sans-serif;
+font-family: 'Ruda', sans-serif;
+*/
+
+html {
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    height: 100vh;
+    margin: 0px -8px 0px -8px;
+}
+
+section h2 {
+    font-size: 48px;
+    font-family: 'Josefin Sans';
+    color: var(--color7);
+    margin: 0px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 35px 25px 25px 25px;
+}
+
+.container {
+    background-color: aliceblue;
+    max-width: 70%;
+    padding: 40px;
+    margin: auto;
+}
+
+.container h2 {
+    padding: 0px;
+}
+
+/*-----------------------------------------
+----------------NAVBAR---------------------
+-------------------------------------------*/
+
+nav ul{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    background-color: var(--logo-orange2-bright);
+    color: var(--color6);
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    z-index: 500;
+    position: static;
+    
+}
+
+nav li{
+    display: inline-block;
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+}
+
+nav li a {
+   display: block;
+    padding: 20px 15px 10px 15px;
+    transition: .2s all;
+}
+
+nav a:hover {
+    transform:scale(1.2);
+    transition: .2s all ease;
+}
+
+
+
+/*----------------------------------------------
+--------------------HERO/TOP------------------
+----------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/texture_swirl_recolor1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px;
+    background-color: var(--logo-red);
+}
+
+#artistlogo {
+/*    background-image: url(images/LOGO.png);*/
+    background-size: cover;
+    background-position: center center;
+    height: 562px;
+    width: 550px;
+    margin: auto;
+    position: relative;
+    top: 125px;
+    z-index: 10;
+}
+
+div.layers {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    background-size: cover;
+    background-position: center right;
+}
+
+#layer-1 {
+    background-image: url(images/logo_bg.png);
+}
+
+#layer-2 {
+    background-image: url(images/logo_red.png);
+}
+
+#layer-3 {
+    background-image: url(images/logo_orange.png);
+}
+
+#layer-4 {
+    background-image: url(images/logo_head.png);
+    animation-name: bobble;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bobble{
+    from {transform: rotate(-2deg)}
+    to {transform: rotate(2deg)} 
+}
+
+.background {
+    position:absolute;
+    left: -50px;
+    top: 50px;
+    width: 105vw;
+    height: 102vh;
+    z-index: 1;
+    filter: url("#turbulence");
+    background-image: url(images/texture_swirl_recolor1.jpg);
+    background-attachment: fixed;
+}
+
+
+
+/*--------------------------------------------
+---------------MUSIC-SECTION----------------
+--------------------------------------------*/
+
+#music {
+    height: 100vh;
+    background-image: url(images/texture_flower2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-----------------------------------------------
+---------------SHOWS-SECTION---------------------
+-------------------------------------------------*/
+
+#shows {
+    background-image: url(images/texture_swirl_recolor1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.bit-widget.bit-layout {
+    font-family: 'Josefin Sans';
+}
+
+#bandsintown div,span {
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    letter-spacing: .8px;
+    line-height: 1.5;
+    color: white;
+}
+
+#bandsintown.container {
+    display: block;
+    background-color: var(--logo-red);
+}
+
+div.bit-venue{
+    color: var(--color1) !important;
+    transition: .2s all linear;
+}
+
+div.bit-venue:hover{
+    letter-spacing: 2px !important;
+    transition: .2s all linear;
+}
+
+/*TICKETS btn Text*/
+span.bit-offers-text {
+    color: var(--logo-red);
+    font-size: 22px !important;
+    transition: .2s all linear;}
+/*TICKETS btn bckgrnd*/
+a.bit-offers.bit-button{
+    background-color: var(--color1);
+    transition: .2s all linear;}
+/*TICKETS btn animations*/
+a.bit-offers.bit-button:hover{background-color:white; transition: .2s all linear;}
+a.bit-offers.bit-button:hover > span.bit-offers-text{color: var(--logo-orange1); transition: .2s all linear;}
+
+
+
+/*RSVP btn Text*/
+a.bit-rsvp.bit-button {
+    color: var(--logo-red);
+    font-size: 22px !important;}
+/*RSVP btn bckgrnd*/
+div.bit-rsvp-container {
+    background-color: var(--color1);}
+/*RSVP BTN animations*/
+a.bit-rsvp.bit-button:hover{background-color:white; transition: .2s all linear;}
+a.bit-rsvp.bit-button:hover{color: var(--logo-orange1); transition: .2s all linear;}
+
+/*-----------------------------------------------
+---------------ABOUT-SECTION---------------------
+-------------------------------------------------*/
+
+#about {
+    background-image: url(images/texture_paint2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    width: 100%;
+}
+
+#bio {
+    display: block;
+    max-width: 800px;
+}
+
+#bio p {
+    font-size: 24px;
+    font-family: 'Josefin Sans';
+    line-height: 1.2;
+}
+
+/*-----------------------------------------------
+---------------CONTACT-SECTION---------------------
+-------------------------------------------------*/
+
+#contact {
+    background-image: url(images/texture_swirl_recolor2.jpg);
+}

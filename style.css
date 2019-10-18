@@ -73,7 +73,7 @@ nav ul{
     text-align: center;
     font-size: 28px;
     background-color: var(--logo-orange2-bright);
-    color: var(--color6);
+    color: var(--color7);
     margin-top: -8px;
     margin-left: -8px;
     margin-bottom: 0px;
@@ -156,6 +156,10 @@ div.layers {
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+#artistlogo h2 {
+    font-family: 'Josefin';
 }
 
 @keyframes bobble{
